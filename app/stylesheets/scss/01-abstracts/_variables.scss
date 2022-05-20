@@ -1,1 +1,26 @@
 @use "./functions" as *;
+
+// Colors
+$light-blue: #666ca3;
+$dark-blue: #13183f;
+$grey: #83869a;
+$magenta: #f74780;
+$pink: #ffa7c3;
+$white: #fff;
+$gradient1: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+$gradient1-hover: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),
+  linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+$gradient2: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+$gradient2-hover: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),
+  linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+
+// Fonts
+$font: "Plus Jakarta Sans", sans-serif;
