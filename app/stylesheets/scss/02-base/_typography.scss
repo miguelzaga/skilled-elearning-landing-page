@@ -1,5 +1,7 @@
 @use "./../01-abstracts/" as *;
 
-body {
-    font-family: $font;
+body,
+button {
+  font-family: $font;
+  color: $dark-blue;
 }

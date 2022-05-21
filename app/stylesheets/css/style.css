@@ -154,8 +154,33 @@ svg {
   fill: currentColor;
 }
 
-body {
+body,
+button {
   font-family: "Plus Jakarta Sans", sans-serif;
+  color: #13183f;
+}
+
+.secondary-button {
+  width: 140px;
+  height: 48px;
+  border-radius: 28px;
+  border: 0;
+  cursor: pointer;
+  background-color: #13183f;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px;
+}
+.header__logo {
+  width: 89px;
 }
 
 /*# sourceMappingURL=style.css.map */
