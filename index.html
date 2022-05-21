@@ -24,7 +24,11 @@
   </head>
   <body>
     <header class="header">
-      <img src="./app/assets/logo-dark.svg" alt="skilled logo" class="header__logo" />
+      <img
+        src="./app/assets/logo-dark.svg"
+        alt="skilled logo"
+        class="header__logo"
+      />
       <button class="header__button secondary-button">Get Started</button>
     </header>
     <main class="main">
@@ -32,12 +36,41 @@
         <div class="description__container">
           <h1 class="description__title">Maximize skill, minimize budget</h1>
           <p class="description__text">
-            Our modern courses across a range of in-demand skills will give you
-            the knowledge you need to live the life you want.
+            Our modern courses across a range of
+            <span class="inline-block">in-demand</span> skills will give you the
+            knowledge you need to live the life you want.
           </p>
-          <button class="description__button primary-button">Get Started</button>
+          <button class="description__button primary-button">
+            Get Started
+          </button>
         </div>
-        <img src="" alt="woman drinking from a cup" class="description__img" />
+        <div class="description__img-container">
+          <picture>
+            <source
+              srcset="
+                ./app/assets/image-hero-desktop@2x.webp 2x,
+                ./app/assets/image-hero-desktop.webp
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./app/assets/image-hero-tablet@2x.webp 2x,
+                ./app/assets/image-hero-tablet.webp
+              "
+              media="(min-width: 640px)"
+            />
+            <img
+              src="./app/assets/image-hero-mobile.png"
+              alt="woman drinking from a cup"
+              class="description__img"
+              srcset="
+                ./app/assets/image-hero-mobile@2x.webp 2x,
+                ./app/assets/image-hero-mobile.webp
+              "
+            />
+          </picture>
+        </div>
       </section>
       <section class="grid">
         <div class="grid__main-cell">

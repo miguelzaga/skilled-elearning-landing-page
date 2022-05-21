@@ -1,14 +1,26 @@
 @use "./../01-abstracts/" as *;
 
+@mixin button {
+  border-radius: 28px;
+  border: 0;
+  cursor: pointer;
+  color: $white;
+  font-weight: 700;
+  font-size: rem(16px);
+}
+
+.primary-button {
+  @include button;
+  width: 167px;
+  height: 56px;
+  background: $gradient1;
+  line-height: calc(26 / 16); // 1.625
+}
+
 .secondary-button {
-    width: 140px;
-    height: 48px;
-    border-radius: 28px;
-    border: 0;
-    cursor: pointer;
-    background-color: $dark-blue;
-    color: $white;
-    font-weight: 700;
-    font-size: rem(16px);
-    line-height: calc(28/16); // 1.75
+  @include button;
+  width: 140px;
+  height: 48px;
+  background-color: $dark-blue;
+  line-height: calc(28 / 16); // 1.75
 }
