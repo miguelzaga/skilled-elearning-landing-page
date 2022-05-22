@@ -199,7 +199,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 16px;
+  padding: 16px;
 }
 .header__logo {
   width: 89px;
@@ -232,11 +232,11 @@ a {
 .grid {
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
   margin-top: 66px;
+}
+.grid__wrapper {
   display: grid;
   grid-template-columns: 1;
   gap: 16px;
-}
-.grid__wrapper {
   margin: 0 16px;
   padding-bottom: 80px;
 }
@@ -278,6 +278,21 @@ a {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.5555555556;
+}
+
+.footer {
+  height: 120px;
+  background-color: #13183f;
+  padding: 36px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__logo {
+  width: 89px;
+}
+.footer__button {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
 }
 
 .inline-block {

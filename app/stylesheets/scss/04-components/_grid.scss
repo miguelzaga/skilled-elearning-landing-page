@@ -2,12 +2,12 @@
 
 .grid {
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-    margin-top: 66px;
-    display: grid;
-    grid-template-columns: 1;
-    gap: 16px;
-
+    margin-top: 66px; 
+       
     &__wrapper {
+        display: grid;
+        grid-template-columns: 1;
+        gap: 16px;
         margin: 0 16px;
         padding-bottom: 80px;
     }

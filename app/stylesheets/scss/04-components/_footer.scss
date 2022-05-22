@@ -1,0 +1,17 @@
+@use './../01-abstracts/' as *;
+
+.footer {
+    height: 120px;
+    background-color: $dark-blue;
+    padding: 36px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        width: 89px;
+    }
+    &__button {
+        background: $gradient2;
+    }
+}
