@@ -164,6 +164,11 @@ button {
   color: #13183f;
 }
 
+a {
+  color: #f74780;
+  text-decoration: none;
+}
+
 .primary-button {
   border-radius: 28px;
   border: 0;
@@ -222,6 +227,54 @@ button {
   font-weight: 500;
   line-height: 1.625;
   margin: 26px 0 24px;
+}
+
+.grid {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+  margin: 66px 0 80px;
+  display: grid;
+  grid-template-columns: 1;
+  gap: 16px;
+}
+.grid__main-cell {
+  color: #fff;
+  background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  border-radius: 10px;
+  height: 120px;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.3333333333;
+  padding: 24px 28px;
+}
+.grid__cell {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 56px 28px 32px;
+  border: black solid 1px;
+  position: relative;
+  margin-top: 24px;
+}
+.grid__cell-img {
+  width: 56px;
+  position: absolute;
+  top: -24px;
+}
+.grid__cell-title {
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+.grid__cell-text {
+  color: #83869a;
+  font-size: 1rem;
+  line-height: 1.625;
+  margin-bottom: 24px;
+}
+.grid__cell-anchor {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5555555556;
 }
 
 .inline-block {

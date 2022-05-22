@@ -1,0 +1,55 @@
+@use "./../01-abstracts/" as *;
+
+.grid {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    margin: 66px 0 80px;
+    display: grid;
+    grid-template-columns: 1;
+    gap: 16px;
+
+    &__main-cell {
+        color: $white;
+        background: $gradient1;
+        border-radius: 10px;
+        height: 120px;
+        font-weight: 800;
+        font-size: rem(24px);
+        line-height: calc(32/24); // 1.33
+        padding: 24px 28px;
+    }
+
+    &__cell{
+        background-color: $white;
+        border-radius: 10px;
+        padding: 56px 28px 32px;
+        border: black solid 1px;
+        position: relative;
+        margin-top: 24px;
+
+        &-img {
+            width: 56px;
+            position: absolute;
+            top: -24px;
+        }
+
+        &-title {
+            font-weight: 800;
+            font-size: rem(20px);
+            line-height: calc(25/20);
+            margin-bottom: 16px;
+        }
+
+        &-text {
+            color: $grey;
+            font-size: rem(16px);
+            line-height: calc(26/16); // 1.62
+            margin-bottom: 24px;
+        }
+
+        &-anchor {
+            font-weight: 700;
+            font-size: rem(18px);
+            line-height: calc(28/18); // 1.55
+        }
+    }
+}
