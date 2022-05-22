@@ -206,11 +206,11 @@ a {
 }
 
 .main {
-  margin: 38px 16px 80px;
+  margin-top: 38px;
 }
 
 .description {
-  margin: 38px 0 66px;
+  margin: 38px 16px 66px;
 }
 .description__container {
   margin-bottom: 16px;
@@ -231,10 +231,14 @@ a {
 
 .grid {
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-  margin: 66px 0 80px;
+  margin-top: 66px;
   display: grid;
   grid-template-columns: 1;
   gap: 16px;
+}
+.grid__wrapper {
+  margin: 0 16px;
+  padding-bottom: 80px;
 }
 .grid__main-cell {
   color: #fff;
@@ -250,7 +254,6 @@ a {
   background-color: #fff;
   border-radius: 10px;
   padding: 56px 28px 32px;
-  border: black solid 1px;
   position: relative;
   margin-top: 24px;
 }

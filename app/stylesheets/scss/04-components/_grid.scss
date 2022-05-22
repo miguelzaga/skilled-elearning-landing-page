@@ -2,10 +2,15 @@
 
 .grid {
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-    margin: 66px 0 80px;
+    margin-top: 66px;
     display: grid;
     grid-template-columns: 1;
     gap: 16px;
+
+    &__wrapper {
+        margin: 0 16px;
+        padding-bottom: 80px;
+    }
 
     &__main-cell {
         color: $white;
@@ -22,7 +27,6 @@
         background-color: $white;
         border-radius: 10px;
         padding: 56px 28px 32px;
-        border: black solid 1px;
         position: relative;
         margin-top: 24px;
 
