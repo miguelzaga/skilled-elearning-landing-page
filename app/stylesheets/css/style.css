@@ -210,10 +210,10 @@ a {
 }
 
 .description {
-  margin: 38px 16px 66px;
+  margin: 38px 0 66px;
 }
 .description__container {
-  margin-bottom: 16px;
+  margin: 16px;
 }
 .description__title {
   font-size: 2.5rem;

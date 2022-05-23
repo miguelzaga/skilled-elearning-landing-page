@@ -1,9 +1,9 @@
 @use "./../01-abstracts/" as *;
 
 .description {
-  margin: 38px 16px 66px;
+  margin: 38px 0 66px;
   &__container {
-    margin-bottom: 16px;
+    margin: 16px;
   }
   &__title {
     font-size: rem(40px);
