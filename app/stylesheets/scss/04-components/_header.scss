@@ -1,8 +1,16 @@
+@use './../01-abstracts/' as *;
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
+
+    @include breakpoint($md){
+        padding-left: 39px;
+        padding-right: 40px;
+    }
+
     &__logo{
         width: 89px;
     }

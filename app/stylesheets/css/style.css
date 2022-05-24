@@ -201,6 +201,12 @@ a {
   align-items: center;
   padding: 16px;
 }
+@media (min-width: 640px) {
+  .header {
+    padding-left: 39px;
+    padding-right: 40px;
+  }
+}
 .header__logo {
   width: 89px;
 }
@@ -210,7 +216,7 @@ a {
 }
 
 .description {
-  margin: 38px 0 66px;
+  margin-top: 38px;
 }
 .description__container {
   margin: 16px;
@@ -231,7 +237,6 @@ a {
 
 .grid {
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-  margin-top: 66px;
 }
 .grid__wrapper {
   display: grid;
