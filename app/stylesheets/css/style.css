@@ -217,15 +217,34 @@ a {
 
 .description {
   margin-top: 38px;
+  position: relative;
+}
+@media (min-width: 640px) {
+  .description {
+    margin-top: 99px;
+    margin-bottom: 186px;
+  }
 }
 .description__container {
   margin: 16px;
+  max-width: 398px;
+}
+@media (min-width: 640px) {
+  .description__container {
+    margin-left: 39px;
+  }
 }
 .description__title {
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1.25;
   margin-bottom: 26px;
+  max-width: 326px;
+}
+@media (min-width: 640px) {
+  .description__title {
+    margin-bottom: 25px;
+  }
 }
 .description__text {
   color: #83869a;
@@ -233,6 +252,20 @@ a {
   font-weight: 500;
   line-height: 1.625;
   margin: 26px 0 24px;
+}
+@media (min-width: 640px) {
+  .description__text {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 640px) {
+  .description__img {
+    position: absolute;
+    top: -230px;
+    left: 380px;
+    width: 640px;
+    z-index: -1;
+  }
 }
 
 .grid {

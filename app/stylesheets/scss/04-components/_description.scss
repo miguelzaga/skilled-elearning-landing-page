@@ -2,20 +2,49 @@
 
 .description {
   margin-top: 38px;
+  position: relative;
+  @include breakpoint($md){
+    margin-top: 99px;
+    margin-bottom: 186px;
+  }
+
   &__container {
     margin: 16px;
+    max-width: 398px;
+    @include breakpoint($md){
+      margin-left: 39px;
+    }
   }
+  
   &__title {
     font-size: rem(40px);
     font-weight: 800;
     line-height: calc(50 / 40); // 1.25
     margin-bottom: 26px;
+    max-width: 326px;
+    @include breakpoint($md) {
+      margin-bottom: 25px;
+    }
   }
+
   &__text {
     color: $grey;
     font-size: rem(16px);
     font-weight: 500;
     line-height: calc(26 / 16); // 1.625
     margin: 26px 0 24px;
+    @include breakpoint($md) {
+      margin-top: 25px;
+    }
+  }
+
+  &__img {
+    @include breakpoint($md){
+      position: absolute;
+      top: -230px;
+      left: 380px;
+      width: 640px;
+      z-index: -1;
+    }
   }
 }
