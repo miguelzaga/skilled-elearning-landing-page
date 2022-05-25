@@ -273,10 +273,18 @@ a {
 }
 .grid__wrapper {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   gap: 16px;
   margin: 0 16px;
   padding-bottom: 80px;
+}
+@media (min-width: 640px) {
+  .grid__wrapper {
+    margin: 0 40px 0 39px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 32px;
+  }
 }
 .grid__main-cell {
   color: #fff;
@@ -287,6 +295,11 @@ a {
   font-size: 1.5rem;
   line-height: 1.3333333333;
   padding: 24px 28px;
+}
+@media (min-width: 640px) {
+  .grid__main-cell {
+    margin-top: 24px;
+  }
 }
 .grid__cell {
   background-color: #fff;

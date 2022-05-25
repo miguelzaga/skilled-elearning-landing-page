@@ -5,10 +5,16 @@
        
     &__wrapper {
         display: grid;
-        grid-template-columns: 1;
+        grid-template-columns: 1fr;
         gap: 16px;
         margin: 0 16px;
         padding-bottom: 80px;
+        @include breakpoint($md){
+            margin: 0 40px 0 39px;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+            row-gap: 32px;
+        }
     }
 
     &__main-cell {
@@ -20,6 +26,9 @@
         font-size: rem(24px);
         line-height: calc(32/24); // 1.33
         padding: 24px 28px;
+        @include breakpoint($md){
+            margin-top: 24px;
+        }
     }
 
     &__cell{
