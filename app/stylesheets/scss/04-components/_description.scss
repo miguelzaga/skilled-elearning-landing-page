@@ -3,6 +3,7 @@
 .description {
   margin-top: 38px;
   position: relative;
+  overflow-x: clip;
   @include breakpoint($md){
     margin-top: 99px;
     margin-bottom: 186px;

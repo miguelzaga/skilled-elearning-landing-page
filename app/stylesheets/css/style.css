@@ -218,6 +218,7 @@ a {
 .description {
   margin-top: 38px;
   position: relative;
+  overflow-x: clip;
 }
 @media (min-width: 640px) {
   .description {
@@ -282,8 +283,9 @@ a {
   .grid__wrapper {
     margin: 0 40px 0 39px;
     grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 11px;
     row-gap: 32px;
+    padding-bottom: 86px;
   }
 }
 .grid__main-cell {
@@ -291,14 +293,18 @@ a {
   background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
   border-radius: 10px;
   height: 120px;
+  padding: 24px 28px;
+}
+.grid__main-cell-title {
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 1.3333333333;
-  padding: 24px 28px;
 }
 @media (min-width: 640px) {
   .grid__main-cell {
+    height: auto;
     margin-top: 24px;
+    padding-top: 56px;
   }
 }
 .grid__cell {

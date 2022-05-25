@@ -12,8 +12,9 @@
         @include breakpoint($md){
             margin: 0 40px 0 39px;
             grid-template-columns: 1fr 1fr;
-            column-gap: 10px;
+            column-gap: 11px;
             row-gap: 32px;
+            padding-bottom: 86px;
         }
     }
 
@@ -22,12 +23,16 @@
         background: $gradient1;
         border-radius: 10px;
         height: 120px;
-        font-weight: 800;
-        font-size: rem(24px);
-        line-height: calc(32/24); // 1.33
+        &-title {
+            font-weight: 800;
+            font-size: rem(24px);
+            line-height: calc(32/24); // 1.33
+        }
         padding: 24px 28px;
         @include breakpoint($md){
+            height: auto;
             margin-top: 24px;
+            padding-top: 56px;
         }
     }
 
