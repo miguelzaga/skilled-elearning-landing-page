@@ -7,6 +7,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include breakpoint($md){
+        padding-left: 39px;
+        padding-right: 40px;
+    }
 
     &__logo {
         width: 89px;

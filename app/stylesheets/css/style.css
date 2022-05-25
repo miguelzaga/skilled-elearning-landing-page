@@ -345,6 +345,12 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+@media (min-width: 640px) {
+  .footer {
+    padding-left: 39px;
+    padding-right: 40px;
+  }
+}
 .footer__logo {
   width: 89px;
 }
