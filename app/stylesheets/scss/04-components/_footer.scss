@@ -1,21 +1,29 @@
-@use './../01-abstracts/' as *;
+@use "./../01-abstracts/" as *;
 
 .footer {
-    height: 120px;
-    background-color: $dark-blue;
+  height: 120px;
+  background-color: $dark-blue;
+
+  &__wrapper {
     padding: 36px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include breakpoint($md){
-        padding-left: 39px;
-        padding-right: 40px;
+    max-width: 1110px;
+    margin: 0 auto;
+    @include breakpoint($md) {
+      padding-left: 39px;
+      padding-right: 40px;
     }
+    @include breakpoint($lg){
+        padding: 32px 0;
+    }
+  }
 
-    &__logo {
-        width: 89px;
-    }
-    &__button {
-        background: $gradient2;
-    }
+  &__logo {
+    width: 89px;
+  }
+  &__button {
+    background: $gradient2;
+  }
 }
