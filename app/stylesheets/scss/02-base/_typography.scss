@@ -9,4 +9,7 @@ button {
 a {
   color: $magenta;
   text-decoration: none;
+  &:hover{
+    color: $pink;
+  }
 }

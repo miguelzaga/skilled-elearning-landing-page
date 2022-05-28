@@ -168,6 +168,9 @@ a {
   color: #f74780;
   text-decoration: none;
 }
+a:hover {
+  color: #ffa7c3;
+}
 
 .primary-button {
   border-radius: 28px;
@@ -181,6 +184,9 @@ a {
   background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
   line-height: 1.625;
 }
+.primary-button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
 
 .secondary-button {
   border-radius: 28px;
@@ -193,6 +199,9 @@ a {
   height: 48px;
   background-color: #13183f;
   line-height: 1.75;
+}
+.secondary-button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
 }
 
 .header {
@@ -215,6 +224,9 @@ a {
 }
 .header__logo {
   width: 89px;
+}
+.header__button:hover {
+  background: #666ca3;
 }
 
 .main {
